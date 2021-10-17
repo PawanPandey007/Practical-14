@@ -1,28 +1,28 @@
-var counter = 0;
+var count = 0;
 
 function decreaseCounter() {
-    var x = document.getElementById("pcontainer");
-    var y = document.getElementById("decreaseCounter");
-    if (counter == 0) {
-        y.ariaDisabled = true;
-        y.style.opacity = .3;
+    var i = document.getElementById("pcontainer");
+    var j = document.getElementById("decreaseCounter");
+    if (count == 0) {
+        j.ariaDisabled = true;
+        j.style.opacity = .3;
     }
     else {
-        if (counter == 1) {
-            y.style.opacity = .3;
+        if (count == 1) {
+            j.style.opacity = .3;
         }
-        counter--;
-        x.innerHTML = counter;
+        count--;
+        i.innerHTML = count;
     }
 }
 
 function increaseCounter() {
-    var x = document.getElementById("pcontainer");
-    var y = document.getElementById("decreaseCounter");
-    counter++;
-    x.innerHTML = counter;
-    if (counter > 0) {
-        y.style.opacity = 1;
-        y.style.border = 2;
+    var i = document.getElementById("pcontainer");
+    var j = document.getElementById("decreaseCounter");
+    count++;
+    i.innerHTML = count;
+    if (count > 0) {
+        j.style.opacity = 1;
+        j.style.border = 2;
     }
 }
